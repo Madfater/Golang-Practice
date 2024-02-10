@@ -28,6 +28,21 @@ var exaple = "This is example"
 example := "this is example"
 ```
 
+## 函式
+
+- 大小區分是否為public or private
+
+```go
+//private
+func example(test string)int{
+
+}
+//public
+func Example(test string)int{
+
+}
+```
+
 ## Array
 
 - 靜態的Array
@@ -108,21 +123,6 @@ delete(m,1)
 type Person struct{
 	Name string
 	Age number
-}
-```
-
-### 函式
-
-- 大小區分是否為public or private
-
-```go
-//private
-func example(test string)int{
-
-}
-//public
-func Example(test string)int{
-
 }
 ```
 
