@@ -111,13 +111,28 @@ type Person struct{
 }
 ```
 
+### 函式
+
+- 大小區分是否為public or private
+
+```go
+//private
+func example(test string)int{
+
+}
+//public
+func Example(test string)int{
+
+}
+```
+
 ### struct的宣告
 
 ```go
 //使用指標比較方便
 var p = &Person{
-	name:"Tom",
-	age:6,
+	Name:"Tom",
+	Age:6,
 }
 
 //存取不須改為箭頭
@@ -153,3 +168,9 @@ len()
 //取空間長度
 cap()
 ```
+
+## 協程
+
+- 使用關鍵字go開始一個新線程
+- 使用chan可以讓多個線程進行安全通訊
+- 關鍵字defer可以確保線程結束後執行 如垃圾清理、關閉連線等
